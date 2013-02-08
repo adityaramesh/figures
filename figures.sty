@@ -1,0 +1,27 @@
+%
+% File Name:	figures.sty
+% Author:	Aditya Ramesh
+% Date:		02/08/2013
+% Contact:	_@adityaramesh.com
+%
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{figures}
+\RequirePackage{algorithm}
+\RequirePackage{algorithmicx}
+\RequirePackage[noend]{algpseudocode}
+\RequirePackage{caption}
+\RequirePackage{booktabs}
+\RequirePackage{tikz}
+\RequirePackage{pgfplots}
+\RequirePackage{pgfplotstable}
+\RequirePackage{subfigure}
+
+% Algorithm Environment Configuration
+\newcommand*\Let[2]{\State #1 $\gets$ #2}
+\algrenewcommand\alglinenumber[1]{{\sffamily\footnotesize#1}}
+\algrenewcommand\algorithmicrequire{\textbf{Precondition:}}
+\algrenewcommand\algorithmicensure{\textbf{Postcondition:}}
+
+% PGF/TikZ Configuration
+\pgfplotsset{compat=1.3}
